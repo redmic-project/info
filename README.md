@@ -26,6 +26,7 @@ REDMIC is composed by multiple [subprojects](https://gitlab.com/redmic-project).
 
 # Documentation
 * [Draft - Memo 2018](https://gitlab.com/redmic-project/info/blob/master/documentation/Draft-%20REDMIC%202018.pdf) 
+* [Schema database](https://gitlab.com/redmic-project/info/blob/master/documentation/Redmic%20(32)%20Modelo%20l%C3%B3gico%20de%20la%20database.pdf)
 
 # Developer team
 
