@@ -24,6 +24,9 @@ With best regards from the Canaries.
 # Code
 REDMIC is composed by multiple [subprojects](https://gitlab.com/redmic-project).
 
+# Documentation
+* [Draft - Memo 2018](https://gitlab.com/redmic-project/info/blob/master/documentation/Draft-%20REDMIC%202018.pdf) 
+
 # Developer team
 
 | Contact                      	| Email                   	|
