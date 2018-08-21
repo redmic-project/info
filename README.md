@@ -1,6 +1,6 @@
 # REDMIC
 
-For several years the OAG Foundation has developed  a integrative repository for all
+For several years the OAG Foundation has developed an integrative repository for all
 kind of marine data (oceanographical, biological, dynamical, exploitations, 
 transit, etc). The application is still under development but in [www.redmic.es](https://redmic.es)
 you can gather an idea of its capacities, goals, and of what has been already
@@ -20,6 +20,7 @@ in the sea, and, at large, the entire community of user and researchers of the s
 REDMIC is our legacy to them.
 
 With best regards from the Canaries.
+
 A. Machado
 
 # Code
