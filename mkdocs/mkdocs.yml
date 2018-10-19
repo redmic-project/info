@@ -2,6 +2,7 @@ site_name: 'REDMIC'
 site_description: 'Repositorio de Datos Marinos Integrados'
 site_author: 'OAG'
 site_url: 'https://redmic.es'
+
 theme:
   name: 'material'
   palette:
