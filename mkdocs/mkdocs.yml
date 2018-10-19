@@ -5,16 +5,17 @@ site_url: 'https://redmic.es'
 
 theme:
   name: 'material'
+  custom_dir: 'material'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: 'redmic'
+    accent: 'redmic'
   font:
-    text: 'Roboto'
+    text: 'Open Sans'
     code: 'Roboto Mono'
   language: 'es'
   logo: 'images/logo.svg'
   palette:
-    primary: 'blue'
+    primary: 'redmic'
 
 extra_css:
   - 'stylesheets/extra.css'

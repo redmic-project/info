@@ -2,3 +2,7 @@
     display: block;
     margin: 0 auto;
 }
+
+.md-header {
+	background-color: black;
+}
