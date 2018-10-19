@@ -53,52 +53,46 @@ container-scanning:
   artifacts:
     paths: [gl-sast-container-report.json]
 
-deploy-geoserver-dev:
+deploy-docs-dev:
   stage: deploy
   image: registry.gitlab.com/redmic-project/docker/docker-deploy
   variables:
     SSH_REMOTE: ${DEV_SSH_REMOTE}
     STACK: docs
-    SERVICES_TO_CHECK: docs_geoserver
     STATUS_CHECK_DELAY: 180
     IMAGE_NAME: ${CI_REGISTRY_IMAGE}
     IMAGE_TAG: ${CI_COMMIT_SHA}
     COMPOSE_FILE: docker-compose.tmpl.yml:docker-compose.dev.yml
-    GEOSERVER_SUBDOMAIN: ${DEV_GEOSERVER_SUBDOMAIN}
     PUBLIC_HOSTNAME: ${DEV_PUBLIC_HOSTNAME}
   script:
-    - create-nets.sh gis-net
     - >
       deploy.sh IMAGE_NAME=${IMAGE_NAME} IMAGE_TAG=${IMAGE_TAG} COMPOSE_FILE=${COMPOSE_FILE}
-      GEOSERVER_SUBDOMAIN=${GEOSERVER_SUBDOMAIN} PUBLIC_HOSTNAME=${PUBLIC_HOSTNAME}
+      PUBLIC_HOSTNAME=${PUBLIC_HOSTNAME}
   environment:
-    name: geoserver-dev
-    url: https://${DEV_GEOSERVER_SUBDOMAIN}.${DEV_PUBLIC_HOSTNAME}
+    name: dev/docs
+    url: https://docs.${DEV_PUBLIC_HOSTNAME}
   only:
     - dev
   when: manual
 
-deploy-geoserver-supporting-branch:
+deploy-docs-supporting-branch:
   stage: deploy
   image: registry.gitlab.com/redmic-project/docker/docker-deploy
   variables:
     SSH_REMOTE: ${DEV_SSH_REMOTE}
-    STACK: gis
-    SERVICES_TO_CHECK: gis_geoserver
+    STACK: docs
     STATUS_CHECK_DELAY: 180
     IMAGE_NAME: ${CI_REGISTRY_IMAGE}
     IMAGE_TAG: ${CI_COMMIT_SHA}
     COMPOSE_FILE: docker-compose.tmpl.yml:docker-compose.dev.yml
-    GEOSERVER_SUBDOMAIN: ${DEV_GEOSERVER_SUBDOMAIN}
     PUBLIC_HOSTNAME: ${DEV_PUBLIC_HOSTNAME}
   script:
-    - create-nets.sh gis-net
     - >
       deploy.sh IMAGE_NAME=${IMAGE_NAME} IMAGE_TAG=${IMAGE_TAG} COMPOSE_FILE=${COMPOSE_FILE}
-      GEOSERVER_SUBDOMAIN=${GEOSERVER_SUBDOMAIN} PUBLIC_HOSTNAME=${PUBLIC_HOSTNAME}
+      PUBLIC_HOSTNAME=${PUBLIC_HOSTNAME}
   environment:
-    name: geoserver-dev
-    url: https://${DEV_GEOSERVER_SUBDOMAIN}.${DEV_PUBLIC_HOSTNAME}
+    name: dev/docs
+    url: https://docs.${DEV_PUBLIC_HOSTNAME}
   only:
     - branches
   except:
@@ -106,26 +100,24 @@ deploy-geoserver-supporting-branch:
     - dev
   when: manual
 
-deploy-geoserver-pro:
+deploy-docs-pro:
   stage: deploy
   image: registry.gitlab.com/redmic-project/docker/docker-deploy
   variables:
     SSH_REMOTE: ${PRO_SSH_REMOTE}
-    STACK: gis
-    SERVICES_TO_CHECK: gis_geoserver
+    STACK: docs
     STATUS_CHECK_DELAY: 180
     IMAGE_NAME: ${CI_REGISTRY_IMAGE}
     IMAGE_TAG: ${CI_COMMIT_SHA}
     COMPOSE_FILE: docker-compose.tmpl.yml:docker-compose.prod.yml
-    GEOSERVER_SUBDOMAIN: ${PRO_GEOSERVER_SUBDOMAIN}
     PUBLIC_HOSTNAME: ${PRO_PUBLIC_HOSTNAME}
   script:
     - >
       deploy.sh IMAGE_NAME=${IMAGE_NAME} IMAGE_TAG=${IMAGE_TAG} COMPOSE_FILE=${COMPOSE_FILE}
-      GEOSERVER_SUBDOMAIN=${GEOSERVER_SUBDOMAIN} PUBLIC_HOSTNAME=${PUBLIC_HOSTNAME}
+      PUBLIC_HOSTNAME=${PUBLIC_HOSTNAME}
   environment:
-    name: geoserver-pro
-    url: https://${PRO_GEOSERVER_SUBDOMAIN}.${PRO_PUBLIC_HOSTNAME}
+    name: pro/docs
+    url:  https://docs.${PRO_PUBLIC_HOSTNAME}
   only:
     - master
   when: manual
