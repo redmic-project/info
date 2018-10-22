@@ -1,8 +1,8 @@
 # Concepto
 ## ¿Qué es REDMIC?
-![](images/redmic-logo.png){: .center}
+REDMIC está concebido como un sistema para la gestión de datos marinos, sin tener en cuenta su origen; oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, tráfico marítimo, etc. Dicho sistema permite el registro, validación, búsqueda, recuperación, visualización, análisis y exportación de los datos.
 
-REDMIC está concebido como un sistema de gestión de datos marinos, dónde se  al máximo los diferentes tipos de datos: Oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, tráfico marítimo, etc. Dicho sistema permite el registro, validación, búsqueda, recuperación, visualización, análisis y exportación de los datos, así como .
+![data_sources](images/data_sources.jpg){: .shadow}
 
 Hay tres principios que han tenido especial peso en su concepción:
 
@@ -10,6 +10,7 @@ Hay tres principios que han tenido especial peso en su concepción:
 * Obtener datos del mar es caro y laborioso. Obtener el dato una vez y potenciar su uso al máximo.
 * Los datos obtenidos con fondos públicos deben ser accesibles a todos los potenciales usuarios.
 
+REDMIC está concebido como un Big data
 
 REDMIC es un sistema de información geográfica en cierto modo peculiar, pues se organiza como repositorio común de datos en función del tipo de dato y no en función de aplicaciones concretas con fines específicos (pesquerías, navegación, gestión costera, etc.), como es habitual en el diseño de la mayoría de los GIS. Podría entenderse como un híbrido entre una base de datos científica y un GIS. La idea básica es almacenar de forma integrada cualquier tipo de dato marino (oceánico + costero) que tenga un referente geográfico, maximizando así su explotación, pero respetando siempre el dato original y las circunstancias en que se generó. Obtener el dato una vez y usarlo muchas, pero en vez de hacerlo a través de la interoperabilidad entre varias bases de datos, que es el enfoque tradicional, REDMIC apuesta por la generatividad que surge de un modelo integrado.
 
@@ -21,11 +22,12 @@ TODO Añadir gráfico **quién, dónde, cuándo, qué** y **cómo**
 Al estar todos los datos vinculados por el factor geográfico y recogidos en un mismo repositorio, la facilidad para correlacionar unos con otros es óptima y justifica el esfuerzo inicial de integrarlos.
 
 ## Tipos de datos
+Debido a la gran variedad de datos que abarca REDMIC, se pueden tener diferentes tipos de datos, dependiendo del sistema de recogida de los mismos:
 
 * *Directos.* Datos obtenidos desde una medición in situ.
-    * *Tiempo real.* Datos transmitidos desde el dispositivo.
-    * *Diferidos.* Datos almacenados en un dispositivo y luego se vuelcan a REDMIC.
-* *Indirectos.* Datos son obtenidos de muestras.
+    * *Tiempo real.* Datos transmitidos directamente desde el dispositivo. Hoy en día, muchos dispositivos son capaces de enviar los datos recogidos a través de internet u otro sistema, ya sea en tiempo real o cada cierto tiempo. P. ej: un correntimetro, una estación meteorolócia, etc.
+    * *Diferidos.* Datos que necesitan se descargados o extraidos de un dispositivo. P. ej: una sonda multiparamétrica, un perfilador, etc.
+* *Indirectos.* Datos obtenidos de muestras.
 * *Derivados.* Datos elaborados a partir de otros.
 
 

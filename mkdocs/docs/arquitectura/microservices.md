@@ -1,6 +1,8 @@
 # Microservicios
-## ¿Qué es?
-Microservicios es una arquitectura de desarrollo de software donde las aplicaciones se dividen en componentes más pequeños e independientes entre sí. A diferencia del enfoque tradicional "monolítico", donde toda la aplicación es implementada en un único componente, los microservicios están separados y funcionan conjuntamente para llevar a cabo las mismas tareas.
+## ¿Qué son?
+Microservicios es una arquitectura de desarrollo de software donde las aplicaciones se dividen en servicios más pequeños, que se ejecutan de forma autónoma y comunican entre sí. A diferencia del enfoque tradicional "monolítico", donde toda la aplicación es implementada en un único componente, los microservicios están separados y funcionan conjuntamente para llevar a cabo las mismas tareas.
+
+![mono_vs_micro_architecture](/images/mono_vs_micro.png){: .center}
 
 ### Beneficios
 * Agilizan la implementación y actualización de los componentes.
@@ -21,7 +23,7 @@ Microservicios es una arquitectura de desarrollo de software donde las aplicacio
 * Necesidad de usar descubrimiento de servicios, ya sea centralizado o integrado. De esta manera se puede acceder a proveedores de servicio con ubicaciones de red dinámicas.
 
 ### ¿Por qué usar microservicios?
-REDMIC es un repositorio que integra una gran cantidad de datos provenientes de diferentess orígenes, y muchas veces no tienen una relación directa o dependencia. Implementar todas estas funcionalidades en una aplicación monolítica, convertiría al repositorio en una plataforma pesada y difícil de mantener por lo que el uso de una arquitectura de microservicios es prácticamente una obligación.
+REDMIC es un repositorio que integra una gran cantidad de datos provenientes de diferentes orígenes, y muchas veces no tienen una relación directa o dependencia. Implementar todas estas funcionalidades en una aplicación monolítica, convertiría al repositorio en una plataforma pesada y difícil de mantener por lo que el uso de una arquitectura de microservicios es prácticamente una obligación.
 
 Sin embargo, este enfoque requiere tener en cuenta multitud de factores, como la comunicación asíncrona entre microservicios, control de errores más exhaustivo, etc. Para solventar esto se hace uso de una serie de patrones de diseño que se comentan en los siguientes apartados.
 
