@@ -73,7 +73,6 @@ deploy-docs-dev:
     url: https://docs.${DEV_PUBLIC_HOSTNAME}
   only:
     - dev
-  when: manual
 
 deploy-docs-supporting-branch:
   stage: deploy
