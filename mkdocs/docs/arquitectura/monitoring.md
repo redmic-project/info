@@ -1,6 +1,13 @@
 # Monitorización
 ## Métricas
-Como todo buen sistema, se necesitan datos que permitan ver el rendimiento del sistema, para ello REDMIC, al usar un sistema como Docker Swarm, se ha optado por usar [SwarmProm](https://github.com/stefanprodan/swarmprom){: target="_blank"}, un proyecto que aglutina varias herramientas para realizar monitorización de un entorno Docker Swarm.
+Como todo buen sistema, se necesitan datos que permitan analizar el rendimiento, para ello REDMIC, al usar un sistema como Docker Swarm, se ha optado por usar [SwarmProm](https://github.com/stefanprodan/swarmprom){: target="_blank"}, un proyecto que aglutina varias herramientas para realizar monitorización de un entorno Docker Swarm.
+
+
+![monitoring](images/monitoring.png){: .center}
+
+### Prometheus
+Open source
+
 
 ### cAdavisor
 cAdvisor es un sistema de monitorización de contenedores, implementado por Google, que permite analizar los recursos usados por un contenedor en ejecución así como su rendimiento.
@@ -8,7 +15,7 @@ cAdvisor es un sistema de monitorización de contenedores, implementado por Goog
 ![cadvisor-logo](images/cadvisor_logo.png){: .shadow}
 
 ### Node-exporter
-Expone métricas del servidor dónde se instale, para ello recopilada datos del hardware, así como del sistema operativo expuestas por el kernel *NIX.
+Node-exporter es una herramienta que expone métricas del servidor donde está instalado, para ello recopila datos sobre usos de memoria, disco o CPU, así como de tráfico E/S.
 
 ### dockerd-exporter
 Colecta métricas del servicio de docker
@@ -20,7 +27,7 @@ Algunos contenedores no están continuamente en ejecución y a menudo solo se en
 
 Cuando un contenedor de este tipo necesita exponer una métrica, realiza un PUT al servicio de PushGateway con la métrica, este la almacena para que Prometheus la pueda leer. La métrica no será actualizada hasta que el contenedor no vuelva a realizar un PUT con nuevos datos.
 
-### Prometheus
+
 
 ### Granafa
 Permite crear dashboard donde comprobar la salud, rendimiento de los diferentes servicios.
@@ -32,7 +39,7 @@ Para
 ### Alert manager
 
 ## Chequeo de salud
-Los contenedores tienen un chequeo de salud, que permite comprobar si un servicio está disponible o no.
+Los contenedores tienen un chequeo de salud, que permite comprobar si el contenedor está funcionando correctamente. Si el chequeo detecta que el funcionamiento no es correcto, el contenedor es parado y se arranca una nueva instancia.
 
 ---
 
