@@ -10,18 +10,18 @@ Hay tres principios que han tenido especial peso en su concepción:
 * Obtener datos del mar es caro y laborioso. Obtener el dato una vez y potenciar su uso al máximo.
 * Los datos obtenidos con fondos públicos deben ser accesibles a todos los potenciales usuarios.
 
-REDMIC es un sistema de información geográfica en cierto modo peculiar, pues se organiza como repositorio común de datos en función del tipo de dato y no en función de aplicaciones concretas con fines específicos (pesquerías, navegación, gestión costera, etc.), como es habitual en el diseño de la mayoría de los GIS.
+REDMIC es un sistema de información geográfica en cierto modo peculiar, pues se organiza como repositorio común de datos en función del tipo de dato y no en función de aplicaciones concretas con fines específicos, como es habitual en el diseño de la mayoría de los GIS.
 
 La estrategia adoptada en REDMIC consiste en vincular los datos siempre a la actividad que los genera, con toda la información asociada (metadatos), evitando la redundancia de información, que se estructura:secuencia de:
 
 
-|                           Name                           	|                        Description                       	|
+|                                                      	|                                               	|
 |:--------------------------------------------------------:	|----------------------------------------------------------|
-| ![who](images/diver.png)   | Quién recoge los datos      |
-| ![what](images/fish.png)   | Qué se recoge               |
-| ![where](images/point.png) | Dónde se recogen los datos  |
-| ![how](images/catcher.png) | Cómo se recogen los datos   |
-| ![when](images/clock.png)  | Cuándo se recogen los datos |
+| ![who](images/diver.png)   | Guardar **quién** recoge los datos permitirá dar autoria de los mismos, y poder pedir responsabilidades. |
+| ![what](images/turtle.png) | Saber **qué** se recoge es algo fundamental, sobretodo en un mundo tan cambiante como el medio marino. |
+| ![where](images/point.png) | Conocer **dónde** se han recogido los datos permitirá poder realizar correlaciones espaciales con otros datos, o más simple poder descubrir que especies existen en una zona, algo fundamental para hacer planificación. |
+| ![how](images/catcher.png) | Saber **cómo** se recogen los datos es algo fundamental, y puede hacer variar los resultados de un estudio, así que especificar las técnicas utilizadas en la recogida de los datos es algo determinante para un repositorio de datos. |
+| ![when](images/clock.png)  | **Cuándo** se recogen los datos es otro factor importante, ya que permitirá detectar patrones de comportamiento, evaluar la evolución de un ecosistema, etc. |
 
 
 Al estar todos los datos vinculados por el factor geográfico y recogidos en un mismo repositorio, la facilidad para correlacionar unos con otros es óptima y justifica el esfuerzo inicial de integrarlos.
