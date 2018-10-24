@@ -17,6 +17,9 @@ theme:
   palette:
     primary: 'redmic'
 
+repo_name: 'Redmic'
+repo_url: 'https://gitlab.com/redmic-project'
+
 extra_css:
   - 'stylesheets/extra.css'
 
