@@ -1,14 +1,4 @@
 # Monitorización
-## Gestión
-La distribución de los contenedores en los diferentes servidores, se siguen ciertos criterios:
-
-* Analizar las cargas de los servidores.
-* Dependencias entre servicios, si hay dependencia entre servicios, y siempre que sea posible se despliegan en el mismo servidor para reducir la latencia de transferencia de datos.
-
-!!! tip
-    Cuando un servicio hace uso intensivo de disco, por ejemplo caché de Nginx, se pueden montar varios volúmenes (EBS) en diferentes directorios, y repartir la caché entre estos discos. De esta forma se reduce la latencia de acceso a disco.
-
-    Esto será solo posible si el servicio permite el uso de varios directorios de trabajo.
 
 ### Portainer
 [Portainer](https://portainer.io){: target="_blank"} es un herramienta web para manejar el entorno Docker Swarm, lo que facilita ver el estado del sistema sin tener que acceder a los servidores directamente.
@@ -70,12 +60,16 @@ Cuando un contenedor de este tipo necesita exponer una métrica, realiza un PUT 
 ---
 
 ## Alertas
-Para 
+Una parte importante del sistema son las alertas, estas permitirán detectar posibles problemas.
+
 ### Alertmanager
-[Alertmanager](https://github.com/prometheus/alertmanager){: target="_blank"}
+[Alertmanager](https://github.com/prometheus/alertmanager){: target="_blank"} es un componente que agrupa las alertas recibidas desde Prometheus, elimina alertas duplicadas y envia notificaciones o por diferentes canales: emails, slack, telegram, etc.
+
+A parte de enviar notificaciones permite enviar acciones a otros servicios que soporten webhooks, esto por ejemplo permite escalar un servicio en caso de tener una alta demanda o cuando esta demanda se reduzca reducir el número de instancias del servicio, para ajustar la demanda al número de instancias.
 
 ### Unsee
-[Unsee](https://github.com/cloudflare/unsee){: target="_blank"}
+[Unsee](https://github.com/cloudflare/unsee){: target="_blank"} permite ver de forma gráfica las alertas que existen actualmente.
+
 
 ## Chequeo de salud
 Todos los contenedores tienen un chequeo de salud que se realiza cada cierto tiempo mientras están en ejecución, esto permite comprobar si el contenedor está funcionando correctamente. Si el chequeo detecta que el funcionamiento no es correcto, el contenedor es parado y se arranca una nueva instancia.

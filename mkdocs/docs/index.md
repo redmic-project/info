@@ -1,6 +1,9 @@
 # Concepto
 ## ¿Qué es REDMIC?
-*REDMIC* está concebido como un sistema para la gestión de datos marinos, sin tener en cuenta su origen; oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, tráfico marítimo, etc. Dicho sistema permite el registro, validación, búsqueda, recuperación, visualización, análisis y exportación de los datos.
+REDMIC está concebido como un sistema para la gestión de datos marinos, sin tener en cuenta su origen; oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, tráfico marítimo, etc. en un solo herramienta. Esta característica convierte a REDMIC en una herramienta única.
+
+
+Dicho sistema permite el registro, validación, búsqueda, recuperación, visualización, análisis y exportación de los datos.
 
 ![data_sources](images/data_sources.jpg){: .shadow}
 
@@ -46,9 +49,9 @@ Debido a la gran variedad de datos que abarca REDMIC, se pueden tener diferentes
 
 
 ## ¿Por qué poner tus datos en REDMIC?
-Colaborar con REDMIC, subiendo tus datos hará que tus datos tengan mayor repercusión ya que estarán disponibles para toda la comunidad científica, y no se perderán guardados en una gaveta. Además esta publicidad de tus datos hará que tu trabajo se vea recompensado.
+Colaborar con REDMIC, subiendo tus datos hará que tengas mayor repercusión ya que estarán disponibles para toda la comunidad científica.
 
-Por ética, si tu trabajo ha sido financiado con fondos públicos y no ponen en riesgo la seguridad ciudadana, deberías te liberar tus datos a la comunidad para que puedan ser usados de nuevo en otros estudios o análisis.
+Por ética, si tu trabajo ha sido financiado con fondos públicos y no existe alguna restricción jurídica, deberías de liberar tus datos a la comunidad para que puedan ser usados de nuevo en futuros estudios o análisis.
 
 Por otro lado, podrás correlacionar tus datos con otros datos usando las herramientas disponibles en REDMIC, que irán aumentando a medida que el proyecto avance en su desarrollo.
 

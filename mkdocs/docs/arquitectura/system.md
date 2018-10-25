@@ -13,10 +13,10 @@ El "manager" es el encargado de exponer de exponer los diferentes servicios a In
 
 Los "workers" son servidores donde se ejecutan los servicios, están distribuidos entre las 3 zonas que provee Amazon en la región "eu-west-1", esta distribución evita que la aplicación deje de responder si alguna de las zonas cae.
 
-Esta configuración de servidores adoptada viene impuesta por Docker Swarm, dónde existe uno o varios managers, encargados de la reparto de tareas, y un conjunto de servidores workers en donde se desplegan las distintas herramientas.
+Esta configuración de servidores adoptada viene impuesta por Docker Swarm, dónde existe uno o varios managers, encargados del reparto de tareas, y un conjunto de servidores workers, donde se desplegan las distintas herramientas.
 
 ### Despliegue
-Para el aprovisionamiento de todas estas máquinas, con sus respectivos requisitos se ha utilizado como base la plantilla de CloudFormation que proporciona [Docker for AWS](https://docs.docker.com/docker-for-aws/){: target="_blank"}. Dicha plantilla ha sido personalizada, por un lado porque se encontró un problema con el plugin ClouStor y el almacenamiento EFS, que hacia que el comportamiento de la aplicación no fuese el adecuado, así que se optó por reemplazar la imagen base utilizada, Moby Linux, por Ubuntu Server, debido ha que era la causante del problema.
+Para el aprovisionamiento de todas estas máquinas, con sus respectivos requisitos se ha utilizado como base la plantilla de CloudFormation que proporciona [Docker for AWS](https://docs.docker.com/docker-for-aws){: target="_blank"}. Dicha plantilla ha sido personalizada, debido a un problema con el plugin [CloudStor](https://docs.docker.com/docker-for-aws/persistent-data-volumes){: target="_blank"} y el almacenamiento tipo EFS, que hacia que el comportamiento de la aplicación no fuese el adecuado, así que se optó por reemplazar la imagen base utilizada, Moby Linux, por Ubuntu Server, debido ha que la imagen original era la causante del problema.
 
 En la plantilla se definen varios parámetros:
 
@@ -26,8 +26,18 @@ En la plantilla se definen varios parámetros:
 * Tipo de instancias AWS, tanto para managers como workers
 * Tipo de discos y capacidades de los mismos
 
+## Gestión
+Todas los servicios que componen REDMIC trabajan dentro de un contenedor, esto permite aislar cada servicio del entorno de ejecución, evitando problemas de versiones de librerías, conflictos de configuraciones, etc. La distribución de los contenedores en los diferentes servidores es responsabilidad de Docker Swarm, pero en ciertos casos es necesario forzar la distribución a un servidor específico, para ello se siguen ciertos criterios:
+
+* Analizar las cargas de los servidores, para evitar tener servidores con cargas desbalanceadas.
+* Dependencias entre servicios, si hay dependencia entre servicios, y siempre que sea posible se despliegan en el mismo servidor para reducir la latencia de transferencia de datos. Un ejemplo puede ser el contenedor encargado de realizar el backup de la base de datos, sería conveniente que se ejecute en la misma máquina donde se encuentra la base de datos, de esta forma se evita tráfico de red.
+
+Para los contenedores con necesidades de almacenamiento, se utiliza el plugin CloudStor, el cual permite dependiendo del tipo de requisitos montar discos "EBS" o "EFS" a los servidores de forma transparente, utilizando los ficheros de configuración usados para definir los requisitos de cada servicio.
 
 
 
 
+!!! tip
+    Cuando un servicio hace uso intensivo de disco, por ejemplo caché de Nginx, se pueden montar varios volúmenes (EBS) en diferentes directorios, y repartir la caché entre estos discos. De esta forma se reduce la latencia de acceso a disco.
 
+    Esto será solo posible si el servicio permite el uso de varios directorios de trabajo.
