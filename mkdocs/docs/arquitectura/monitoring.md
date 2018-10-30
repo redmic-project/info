@@ -17,7 +17,7 @@ Algunas tareas:
 
 
 ## Métricas
-Como en todo buen sistema, es necesario contar con una herramienta que permita analizar el rendimiento del sistema, con el fin de detectar problemas, optimizar recursos, actuar en picos de alta demanda, etc.
+Como todo buen sistema, es necesario contar con una herramienta que permita analizar el rendimiento del sistema, con el fin de detectar problemas, optimizar recursos, actuar ante picos de alta demanda, etc.
 
 [SwarmProm](https://github.com/stefanprodan/swarmprom){: target="_blank"}, es la base para realizar la monitorización de REDMIC. Este proyecto aglutina diferentes servicios de recolecta y visualización de métricas. En el siguiente diagrama se muestra un esquema básico de las funciones que realiza cada componente.
 
@@ -60,12 +60,12 @@ Cuando un contenedor de este tipo necesita exponer una métrica, realiza un PUT 
 ---
 
 ## Alertas
-Una parte importante del sistema son las alertas, estas permitirán detectar posibles problemas.
+Una parte importante del sistema son las alertas, estas permitirán detectar y anticiparnos a posibles problemas: uso excesivo de disco o CPU, ocupación de los discos, copias de seguridad no realizadas, etc.
 
 ### Alertmanager
 [Alertmanager](https://github.com/prometheus/alertmanager){: target="_blank"} es un componente que agrupa las alertas recibidas desde Prometheus, elimina alertas duplicadas y envia notificaciones o por diferentes canales: emails, slack, telegram, etc.
 
-A parte de enviar notificaciones permite enviar acciones a otros servicios que soporten webhooks, esto por ejemplo permite escalar un servicio en caso de tener una alta demanda o cuando esta demanda se reduzca reducir el número de instancias del servicio, para ajustar la demanda al número de instancias.
+Además de enviar notificaciones, es posible enviar acciones a otros servicios que soporten webhooks, esto por ejemplo permite escalar un servicio en caso de tener una alta demanda o cuando esta demanda se reduzca reducir el número de instancias del servicio, para ajustar la demanda al número de instancias.
 
 ### Unsee
 [Unsee](https://github.com/cloudflare/unsee){: target="_blank"} permite ver de forma gráfica las alertas que existen actualmente.

@@ -1,6 +1,18 @@
 # Vessels
+Tracking de buques para ello, se utilizan los datos AIS, es un transmisor que debe de enviar la posición de los buques en tiempo real. Existe un servicio llamada AISHub el cual provee datos de buques de todo el mundo.
 
-Vessels management provide…
+## Flujo
+
+1. El servicio AIS, realiza una petición a AIS Hub para descargar los datos del último minuto. Se ha optado por descargar los datos en formato CSV, ya que pesan menos.
+2. Una vez descargados, se descomprimen y se inyectan a un topic de Kafka.
+3. El microservicio de vessel, escucha el topic de los datos brutos.
+4. *Command* procesa el dato, comprobando que el buque esté añadido, en caso contrario lo añade, enriqueciéndolo y por último enviándolo de al topic de guardar.
+5. *View* escucha el topic de guardar, guarda el dato en la base de datos.
+6. Si el dato se ha guardado correctamente, se envía una confirmación al *Command*.
+7. El *Command* recibe la confirmación de guardado correctamente.
+
+
+![AIS](images/AIS.png){: .center}
 
 ## Add vessel
 
