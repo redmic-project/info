@@ -2,7 +2,7 @@
 ## ¿Qué son?
 Microservicios es una arquitectura de desarrollo de software donde las aplicaciones se dividen en servicios más pequeños, que se ejecutan de forma autónoma y comunican entre sí. A diferencia del enfoque tradicional "monolítico", donde toda la aplicación es implementada en un único componente, los microservicios están separados y funcionan conjuntamente para llevar a cabo las mismas tareas.
 
-![mono_vs_micro_architecture](/images/mono_vs_micro.png){: .center}
+![mono_vs_micro_architecture](images/mono_vs_micro.png){: .center}
 
 ### Beneficios
 * Agilizan la implementación y actualización de los componentes.
