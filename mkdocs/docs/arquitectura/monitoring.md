@@ -47,15 +47,17 @@ Todas las herramientas que se exponen a continuación son instaladas como conten
 Colecta métricas del servicio de docker
 
 ### PushGateway
-Algunos contenedores no están continuamente en ejecución y a menudo solo se encargan de realizar una acción momentáneamente como una copia de seguridad de una base de datos, realizar una tarea de mantenimiento, etc. Este tipo funcionamiento hace que Prometheus no pueda recopilar datos de ellos, así que para resolver este problema, se utiliza [PushGateway](https://github.com/prometheus/pushgateway){: target="_blank"}.
+Algunos contenedores no están continuamente en ejecución y a menudo solo se encargan de realizar una acción momentánea, como una copia de seguridad de una base de datos, realizar una tarea de mantenimiento, etc. Este tipo de funcionamiento hace que Prometheus no pueda recopilar datos de ellos, así que para resolver este problema, se utiliza [PushGateway](https://github.com/prometheus/pushgateway){: target="_blank"}.
 
 ![pushgateway](images/pushgateway.png){: .center}
 
-Cuando un contenedor de este tipo necesita exponer una métrica, realiza un PUT al servicio de PushGateway con la métrica, este la almacena para que Prometheus la pueda leer. La métrica no será actualizada hasta que el contenedor no vuelva a realizar un PUT con nuevos datos.
+Cuando un contenedor de este tipo necesita exponer una métrica, realiza un PUT al servicio de PushGateway con las métricas, éste la almacena y la expone a Prometheus para que la pueda leer. Las métricas no serán actualizadas hasta que el contenedor no vuelva a realizar un PUT con nuevos datos.
 
 
 ### Granafa
-[Grafana](https://grafana.com){: target="_blank"} permite crear dashboards donde comprobar la salud, rendimiento de los diferentes servicios.
+[Grafana](https://grafana.com){: target="_blank"} permite analizar y visualizar las diferentes métricas recopiladas por Prometheus de una forma elegante en diferentes tipos de dashboards.
+
+![grafana.png](images/grafana.png){: .shadow}
 
 ---
 
@@ -68,7 +70,7 @@ Una parte importante del sistema son las alertas, estas permitirán detectar y a
 Además de enviar notificaciones, es posible enviar acciones a otros servicios que soporten webhooks, esto por ejemplo permite escalar un servicio en caso de tener una alta demanda o cuando esta demanda se reduzca reducir el número de instancias del servicio, para ajustar la demanda al número de instancias.
 
 ### Unsee
-[Unsee](https://github.com/cloudflare/unsee){: target="_blank"} permite ver de forma gráfica las alertas que existen actualmente.
+[Unsee](https://github.com/cloudflare/unsee){: target="_blank"} es una pequeña herramienta que permite ver de forma gráfica las alertas que existen actualmente.
 
 
 ## Chequeo de salud
@@ -81,4 +83,6 @@ Además de los contenedores, todos los servidores cuentan con un servicio que co
 ---
 
 ## Logs
-Los logs de una aplicación son una herramienta importante para descubrir errores, es por ello que un sistema como REDMIC compuesto por múltiples servicios sea necesario centralizar en un sitio común todos ellos. Para este acometido se ha usado CloudWatch, es una herramienta de Amazon para la gestión de logs centralizada.
+Los logs de una aplicación son una herramienta importante para descubrir errores, es por ello que un sistema como REDMIC compuesto por múltiples servicios sea necesario centralizar en un sitio común todos ellos.
+
+Aún no se ha decidido la herramienta.

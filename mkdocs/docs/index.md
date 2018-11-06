@@ -1,11 +1,29 @@
 # Concepto
 ## ¿Qué es REDMIC?
+
+---
+IDEAS
+
+REDMIC son las siglas de Repositorio de Datos Marinos Integrados de Canarias, 
+
+Un lugar centralizado dónde encontrar casi cualquier dato relacionado con el entorno marino, sin tener en cuenta su origen; oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, etc.
+
+Esta capacidad hace a REDMIC una herramienta única, ya que
+
+REDMIC no se limita a ser un simple buscador que recorre diferentes web en busca de los datos o IDEs.
+
+Pasamos de la tendencia de modelos descentralizados a centralizar todos los datos en un mismo lugar, ya que favorece el análisis ...
+
+
 REDMIC está concebido como un sistema para la gestión de datos marinos, sin tener en cuenta su origen; oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, tráfico marítimo, etc. en una sola herramienta. Esta característica convierte a REDMIC en un repositorio único.
 
 Esta integración de los datos permitirá en un futuro, poder estudiar hábitats con mayor agilidad y precisión.
 
-Todo ello siguiendo una filosofía OpenData, OpenScience.
+Todo ello siguiendo una filosofía [Open Data](https://es.wikipedia.org/wiki/Datos_abiertos) y [Open Science](https://es.wikipedia.org/wiki/Ciencia_abierta).
 
+Tecnología de [Big Data](https://es.wikipedia.org/wiki/Macrodatos).
+
+---
 
 Dicho sistema permite el registro, validación, búsqueda, custodia, recuperación, visualización, análisis y exportación de los datos.
 
@@ -33,7 +51,7 @@ La estrategia adoptada en REDMIC consiste en vincular los datos siempre a la act
 
 No todos los datos deben de cumplir todos los requisitos anteriores, dependerá muchas veces del tipo de dato, pero cuanto más requisitos cumpla, mejor será el dato y más utilidad se le podrá dar.
 
-## Tipos de datos
+## Tipo de datos
 Debido a la gran variedad de datos que abarca REDMIC, se pueden clasificar dependiendo del sistema de recogida de los mismos:
 
 * *Directos.* Datos obtenidos desde una medición in situ.
@@ -54,23 +72,33 @@ Debido a la gran variedad de datos que abarca REDMIC, se pueden clasificar depen
 
 
 ## ¿Cómo colaborar con REDMIC?
-Colaborar con REDMIC tiene sus ventajas:
+Si te gusta el proyecto y estas interesado en colaborar tienes varias formas de hacerlo.
 
 ![hands](images/hands.png){: .shadow}
 
 ### Aportando datos
+
 Subiendo tus datos a REDMIC hará que tu trabajo obtenga mayor repercusión ya que estará disponible para toda la comunidad científica. Además, podrás utilizar las herramientas existentes sobre tus datos, así como enriquecer tus datos con los existentes. Este concepto funciona a la perfección en otros ámbitos como el desarrollo de software, arquitectura, etc, donde los desarrolladores exponen su trabajo para que otros puedan hacer uso de él, mejorarlo o incluso proponer colaboraciones. Es un escaparate perfecto para dar a conocer tu trabajo y que no se pierda en una gaveta.
 
 #### ¿Cómo puedo aportar datos?
-Todavía estamos en fase de desarrollo, así que por ahora puedes aportar datos enviándolos por correo a [info@redmic.es](mailto:info@redmic.es), en futuro este proceso se podrá realizar desde la web.
+Todavía estamos en fase de desarrollo, así que por ahora puedes aportar datos enviándolos por correo a [info@redmic.es](mailto:info@redmic.es), en el futuro este proceso se podrá realizar desde la web.
 
 #### ¿Soy investigador y necesito esperar a publicar para liberar mis datos?
 En REDMIC, hemos pensado en estos casos donde los investigadores que desean que sus datos no sean accesibles hasta que hagan sus publicaciones, para ello, REDMIC tiene la posibilidad de embargar tus datos por un tiempo determinado, esto hará que los datos sólo sean accesibles por su dueño y personas que el decida. De esta forma, una vez acabe el tiempo de embargo o el investigador así lo decida, los datos se harán públicos para todo el mundo.
 
-Por ética, si tu trabajo ha sido financiado con fondos públicos y no existe alguna restricción jurídica, deberías de liberar tus datos a la comunidad para que puedan ser usados de nuevo en futuros estudios o análisis.
+Por ética, si tu trabajo ha sido financiado con fondos públicos y no existe alguna restricción jurídica sobre ellos, deberías de liberarlos a la comunidad para que puedan ser usados de nuevo en futuros estudios o análisis.
 
-#### No soy investigador
-Si no eres investigador, también puedes colaborar, desde REDMIC apoyamos la ["Ciencia ciudadana"](https://es.wikipedia.org/wiki/Ciencia_ciudadana) (Citizen Sciencie) y creemos que es una herramienta muy valiosa, es por ello que si tiene fotos de pescados, aves marinas o algo relacionado con el mar y que creas que puede ser útil envíanosla.
+#### No soy investigador pero me gustaría colaborar
+Si no eres investigador, también puedes colaborar, desde REDMIC apoyamos la ["Ciencia ciudadana"](https://es.wikipedia.org/wiki/Ciencia_ciudadana) (Citizen Sciencie) y creemos que es una herramienta muy valiosa, es por ello que si tienes fotos de pescados, aves marinas o algo relacionado con el mar y que creas que puede ser útil envíanosla, estaremos muy agradecidos.
 
 ### Reportando errores
 No sólo puedes colaborar subiendo datos, también puedes reportar errores en los datos, problemas en la aplicación o incluso sugerencias, todas ellas serán bien recibidas.
+
+----
+### Colaboradores
+
+IDEA
+
+Añadir una sección con los logos de los colaboradores que han aportado datos: GobCan, MAGRAMA, IEO
+
+----

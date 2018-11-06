@@ -8,6 +8,7 @@ REDMIC es proyecto desarrollado por el [Observatorio Ambiental Granadilla](http:
 |------|------------------------------|-------------------------|
 | ![carlos](images/carlos.png){: .rounded} | **Carlos A. González Carballo** | Desarrollador |
 | ![nacho](images/nacho.jpg){: .rounded} | **Ignacio Lorenzo García** | Jefe de sistemas |
+| ![jose_andres](images/jose_andres.jpg){: .rounded} | **José Andrés Sevilla Hernández** | GIS |
 | ![marta](images/marta.jpg){: .rounded} | **Marta González Carballo** | Curator de datos |
 | ![ninoska](images/ninoska.jpg){: .rounded} | **Ninoska Adern Febles** | Operadora de datos |
 | ![noel](images/noel.png){: .rounded} | **Noel Alonso Expósito** | Desarrollador |

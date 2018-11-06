@@ -2,9 +2,7 @@
 
 
 ## Estructura
-A finales de 2018, se cuentan con 4 servidores.
-La estructura actual Actualmente se cuenta con 4 servidores
-Se utiliza docker swarm
+A finales de 2018, se cuentan con 4 servidores. Se utiliza docker swarm
 ![servers_infrastructure](images/servers_infrastructure.png){: .center}
 
 Todos los servidores pertenecen a una misma red (VPC), cada zona cuenta con una subred además de una exclusiva para el manager, es decir, en total existen 4 subredes. Esto hace que si en un futuro aumenta el número de servidores, los nuevos equipos se unirán a las subredes existentes, siempre que no existan restricciones.
@@ -32,8 +30,12 @@ Todas los servicios que componen REDMIC trabajan dentro de un contenedor, esto p
 * Analizar las cargas de los servidores, para evitar tener servidores con cargas desbalanceadas.
 * Dependencias entre servicios, si hay dependencia entre servicios, y siempre que sea posible se despliegan en el mismo servidor para reducir la latencia de transferencia de datos. Un ejemplo puede ser el contenedor encargado de realizar el backup de la base de datos, sería conveniente que se ejecute en la misma máquina donde se encuentra la base de datos, de esta forma se evita tráfico de red.
 
-Para los contenedores con necesidades de almacenamiento, se utiliza el plugin CloudStor, el cual permite dependiendo del tipo de requisitos montar discos "EBS" o "EFS" a los servidores de forma transparente, utilizando los ficheros de configuración usados para definir los requisitos de cada servicio.
+Para los contenedores con necesidades de persistencia de datos, se utilizan volúmenes, para este acometido se ha instalado el plugin CloudStor, ya que permite de forma transparente utilizar diferentes tipos de discos:
 
+* *EBS* discos que solo pueden ser usados en una máquina.
+* *EFS* discos que puede ser compartidos por diferentes máquinas.
+
+Ambas configuraciones son pasadas desde los ficheros de configuración de despliegue de cada servicio.
 
 
 
