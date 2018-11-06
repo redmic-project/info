@@ -91,3 +91,12 @@ Si no eres investigador, también puedes colaborar, desde REDMIC apoyamos la ["C
 
 ### Reportando errores
 No sólo puedes colaborar subiendo datos, también puedes reportar errores en los datos, problemas en la aplicación o incluso sugerencias, todas ellas serán bien recibidas.
+
+----
+### Colaboradores
+
+IDEA
+
+Añadir una sección con los logos de los colaboradores que han aportado datos: GobCan, MAGRAMA, IEO
+
+----
