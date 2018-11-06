@@ -6,7 +6,6 @@ IDEAS
 
 REDMIC son las siglas de Repositorio de Datos Marinos Integrados de Canarias, 
 
-Un lugar centralizado dónde encontrar casi cualquier dato relacionado con el entorno marino, sin tener en cuenta su origen; oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, etc.
 
 Esta capacidad hace a REDMIC una herramienta única, ya que
 
@@ -25,6 +24,9 @@ Todo ello siguiendo una filosofía [Open Data](https://es.wikipedia.org/wiki/Dat
 Tecnología de [Big Data](https://es.wikipedia.org/wiki/Macrodatos).
 
 ---
+
+Un lugar centralizado dónde encontrar casi cualquier dato relacionado con el entorno marino, sin tener en cuenta su origen; oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, etc.
+
 
 Dicho sistema permite el registro, validación, búsqueda, custodia, recuperación, visualización, análisis y exportación de los datos.
 
@@ -92,9 +94,13 @@ Si no eres investigador, también puedes colaborar, desde REDMIC apoyamos la ["C
 ### Reportando errores
 No sólo puedes colaborar subiendo datos, también puedes reportar errores en los datos, problemas en la aplicación o incluso sugerencias, todas ellas serán bien recibidas.
 
-----
-### Colaboradores
+## Colaboradores
+Algunos instituciones que han aportado datos.
 
+![ieo](images/ieo.jpg)
+![loro_parque](images/loro_parque.png)
+
+----
 IDEA
 
 Añadir una sección con los logos de los colaboradores que han aportado datos: GobCan, MAGRAMA, IEO
