@@ -16,8 +16,7 @@ Pasamos de la tendencia de modelos descentralizados a centralizar todos los dato
 
 REDMIC está concebido como un sistema para la gestión de datos marinos, sin tener en cuenta su origen; oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, tráfico marítimo, etc. en una sola herramienta. Esta característica convierte a REDMIC en un repositorio único.
 
-
-Esta integración de los datos permitirá en un futuro, poder estudiar hábitats con mayor precisión.
+Esta integración de los datos permitirá en un futuro, poder estudiar hábitats con mayor agilidad y precisión.
 
 Todo ello siguiendo una filosofía [Open Data](https://es.wikipedia.org/wiki/Datos_abiertos) y [Open Science](https://es.wikipedia.org/wiki/Ciencia_abierta).
 
@@ -40,17 +39,19 @@ Hay tres principios que han tenido especial peso en su concepción:
 
 REDMIC es un sistema de información geográfica en cierto modo peculiar, pues se organiza como repositorio común de datos en función del tipo de dato y no en función de aplicaciones concretas con fines específicos, como es habitual en el diseño de la mayoría de los [GIS](https://es.wikipedia.org/wiki/Sistema_de_informaci%C3%B3n_geogr%C3%A1fica){: target="_blank"}.
 
+Sin embargo, esto no significa que REDMIC sea una aplicación sobredimensionada. Mediante el uso de tecnologías big data y modularización, es posible crear unidades funcionales independientes de manera ágil, que permite la posterior integración con cualquier tipo de dato del repositorio. Más fácil con un ejemplo. Si se descubre la necesidad de registrar un histórico de la recogida de basura en las playas, es posible crear un módulo que se encargue de esta labor, independiente de los ya creados. Posteriormente se puede cotejar dichos datos con otros ya registrados, como por ejemplo, los tracks de barcos en la zona. Ajá! entonces, ¿se podría obtener una relación entre el tráfico de barcos en la zona y la cantidad de basura recogida? La respuesta es que con REDMIC solo nos haría falta unos segundos o incluso en tiempo real, en lugar de semanas obteniendo datos de diferentes fuentes, homogeneizando los datos, pasando control de calidad, etc.
+
 La estrategia adoptada en REDMIC consiste en vincular los datos siempre a la actividad que los genera, con toda la información asociada (metadatos), evitando la redundancia de información, que se estructura siguiendo estas cinco preguntas.
 
 | | |
 |:-:|-|
-| ![who](images/diver.png)   | Guardar **quién** recoge los datos permitirá dar autoria de los mismos, y poder pedir responsabilidades. |
-| ![what](images/turtle.png) | Saber **qué** se recoge es algo fundamental, sobre todo en un mundo tan cambiante como el medio marino. |
+| ![who](images/diver.png)   | Guardar **quién** recoge los datos permitirá dar autoria de los mismos, lo que se traduce en el reconocimiento de la comunidad scientífica así como el fomento de posibles colaboraciones. Además, los usuarios de REDMIC pueden ayudar a ampliar y/o mejorar los datos.  |
+| ![what](images/turtle.png) | Saber **qué** se recoge es algo fundamental, sobre todo en un mundo tan cambiante como el medio marino. REDMIC, en relación con el tipo de datos que se está registrando, permite la definición de una serie de campos que describirán de forma exhaustiva dichos datos.  |
 | ![where](images/point.png) | Conocer **dónde** se han recogido los datos permitirá poder realizar correlaciones espaciales con otros datos, o descubrir que especies existen en una zona, algo fundamental para hacer planificación. |
-| ![how](images/catcher.png) | Saber **cómo** se recogen los datos es algo fundamental, y puede hacer variar los resultados de un estudio, así que especificar las técnicas y dispositivos utilizados en la recogida de los datos es algo determinante para un repositorio de datos. |
+| ![how](images/catcher.png) | Saber **cómo** se recogen los datos es muy importante y puede hacer variar los resultados de un estudio, así que especificar las técnicas y dispositivos utilizados en la recogida de los datos es determinante para un repositorio de datos. |
 | ![when](images/clock.png)  | **Cuándo** se recogen los datos es otro factor importante, ya que permitirá detectar patrones de comportamiento, evaluar la evolución de un ecosistema, etc. |
 
-No todos los datos deben de cumplir todos estos requisitos, dependerá muchas veces del tipo de dato, pero cuanto más cumplan mejor será el dato y mejor utilidad se le podrá dar.
+No todos los datos deben de cumplir todos los requisitos anteriores, dependerá muchas veces del tipo de dato, pero cuanto más requisitos cumpla, mejor será el dato y más utilidad se le podrá dar.
 
 ## Tipo de datos
 Debido a la gran variedad de datos que abarca REDMIC, se pueden clasificar dependiendo del sistema de recogida de los mismos:
@@ -78,7 +79,8 @@ Si te gusta el proyecto y estas interesado en colaborar tienes varias formas de 
 ![hands](images/hands.png){: .shadow}
 
 ### Aportando datos
-Subiendo tus datos a REDMIC hará que tu trabajo obtenga mayor repercusión ya que estará disponible para toda la comunidad científica. Además, podrás utilizar las herramientas existentes sobre tus datos, así como complementar tus datos con los ya existentes, obteniendo resultados más precisos.
+
+Subiendo tus datos a REDMIC hará que tu trabajo obtenga mayor repercusión ya que estará disponible para toda la comunidad científica. Además, podrás utilizar las herramientas existentes sobre tus datos, así como enriquecer tus datos con los existentes. Este concepto funciona a la perfección en otros ámbitos como el desarrollo de software, arquitectura, etc, donde los desarrolladores exponen su trabajo para que otros puedan hacer uso de él, mejorarlo o incluso proponer colaboraciones. Es un escaparate perfecto para dar a conocer tu trabajo y que no se pierda en una gaveta.
 
 #### ¿Cómo puedo aportar datos?
 Todavía estamos en fase de desarrollo, así que por ahora puedes aportar datos enviándolos por correo a [info@redmic.es](mailto:info@redmic.es), en el futuro este proceso se podrá realizar desde la web.
