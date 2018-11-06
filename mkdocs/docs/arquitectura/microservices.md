@@ -112,7 +112,7 @@ Para intercambiar datos entre Kafka y otro sistema, se crean instancias de Kafka
 ## ES + CQRS + Saga + Kafka para crear microservicios
 Al conjunto de componentes que implementan las funcionalidades necesarias para poder integrar nuevos datos en REDMIC, se le llama unidad funcional. Estas unidades funcionales se implementan como microservicios aplicando los patrones y tecnologías vistos anteriormente.
 
-![](/images/CQRS.png){: .center}
+![](images/CQRS.png){: .center}
 
 Un paso importante para su diseño, es elegir qué datos la van a integrar. Por ejemplo, si se trata de datos geolocalizados, la unidad funcional estará compuesta por el dato principal, más los metadatos asociados a este, que no sean compartidos con otros datos y que por sí mismo aporten valor al repositorio.
 
