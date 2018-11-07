@@ -4,8 +4,7 @@
 ---
 IDEAS
 
-REDMIC son las siglas de Repositorio de Datos Marinos Integrados de Canarias, 
-
+REDMIC son las siglas de Repositorio de Datos Marinos Integrados de Canarias.
 
 Esta capacidad hace a REDMIC una herramienta única, ya que
 
@@ -14,12 +13,19 @@ REDMIC no se limita a ser un simple buscador que recorre diferentes web en busca
 Cruzar con otros datos
 Visualizar datos de diferentes maneras: mapas, gráficas
 Herramientas analíticas integradas
+Estandarizan los datos, mismas unidades y sistemas de coordenadas
+Control de calidad
 
-Aunque se sigue una filosofía Open Data no sé limita a un simple almacén de ficheros con un buscador
 
-El tener un sitio común, con datos homogenizados permitirá en un futuro generar mejores informes, planificación, etc.
+Aunque se sigue una filosofía Open Data no se limita a un simple almacén de ficheros con un buscador
 
-Pasamos de la tendencia de modelos descentralizados a centralizar todos los datos en un mismo lugar, ya que favorece el análisis ...
+El tener un sitio común, con datos homogeneizados permitirá en un futuro generar mejores informes, planificación, etc.
+
+Sería posible crear herramientas de machine learning para la gestión de los datos o explotación. Para predicción de
+
+Predicción de fenómenos destacables, zonas de inundación, presencia de microalgas, cambios significantes en series de datos...
+
+Pasamos de la tendencia de modelos descentralizados repartidos en varios nodos a centralizar todos los datos en un mismo lugar, de esta forma se favorece el análisis y procesado de datos.
 
 
 REDMIC está concebido como un sistema para la gestión de datos marinos, sin tener en cuenta su origen; oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, tráfico marítimo, etc. en una sola herramienta. Esta característica convierte a REDMIC en un repositorio único.
@@ -38,6 +44,8 @@ Trazabilidad de los datos, todo dato incorporado en REDMIC tendrá un histórico
 
 Un lugar centralizado dónde encontrar casi cualquier dato relacionado con el entorno marino, sin tener en cuenta su origen; oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, etc.
 
+
+Esta integración de los datos, permitirá en un futuro poder usar herramientas de **machine learning** para anticiparse a posibles situaciones de riesgo: *inundaciones*, *fenómenos meteorológicos adversos*, etc., detectar cambios significantes en un parámetro o descubrir patrones de comportamientos: *presencia de microalgas*, etc.
 
 Dicho sistema permite el registro, validación, búsqueda, custodia, recuperación, visualización, análisis y exportación de los datos.
 
