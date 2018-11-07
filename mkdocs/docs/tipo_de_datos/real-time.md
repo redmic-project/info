@@ -1,4 +1,4 @@
-# Real-time
+# Sensores en tiempo real
 ![buoy](images/buoy.jpg){: .shadow}
 
 En la actualidad muchos dispositivos envía los datos en tiempo real: mareógrafos, correntímetros, estaciones meteorológicas, etc. es por eso, que debe existir un camino para incorporar estos datos.
