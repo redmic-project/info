@@ -28,3 +28,4 @@ extra_css:
 markdown_extensions:
   - markdown.extensions.attr_list
   - admonition
+  - pymdownx.critic
