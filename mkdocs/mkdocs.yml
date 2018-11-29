@@ -16,8 +16,6 @@ theme:
   logo: 'images/logo.svg'
   palette:
     primary: 'redmic'
-  feature:
-    tabs: true
 
 repo_name: 'Redmic'
 repo_url: 'https://gitlab.com/redmic-project'
