@@ -1,23 +1,30 @@
 site_name: 'REDMIC'
 site_description: 'Repositorio de Datos Marinos Integrados'
 site_author: 'OAG'
-site_url: 'https://redmic.es'
+url: "https://docs.redmic.es"
+
 
 theme:
   name: 'material'
+  custom_dir: 'material'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: 'redmic'
+    accent: 'redmic'
   font:
-    text: 'Roboto'
+    text: 'Open Sans'
     code: 'Roboto Mono'
   language: 'es'
   logo: 'images/logo.svg'
   palette:
-    primary: 'blue'
+    primary: 'redmic'
+
+repo_name: 'Redmic'
+repo_url: 'https://gitlab.com/redmic-project'
 
 extra_css:
   - 'stylesheets/extra.css'
 
 markdown_extensions:
   - markdown.extensions.attr_list
+  - admonition
+  - pymdownx.critic

@@ -1,40 +1,11 @@
-# Concepto
-## ¿Qué es REDMIC?
-![](images/redmic-logo.png){: .center}
+# ¿Qué significa REDMIC?
+REDMIC son las siglas de "Repositorio de Datos Marinos Integrados de Canarias", una base de datos geográficos concebida para reunir cualquier información relacionada con el entorno marino. Puede provenir de multitud de orígenes y formatos, de cualquier naturaleza concebible en todos los ámbitos del conocimiento (oceanografía, biología, hidrodinámica, pesca, geología, transporte marítimo, etc.). El repositorio, además de almacenar y mantener publicados los datos, está dotado de la capacidad de integrar la información para poder tratar los datos conjuntamente.
 
-REDMIC está concebido como un sistema de gestión de datos marinos organizado sobre un mismo repositorio de datos, integrando al máximo posible los diferentes tipos de datos marinos (oceanográficos, biológicos, hidrodinámicos, pesqueros, geológicos, de tráfico marítimo, etc.). Dicho sistema permite el registro, validación, búsqueda, recuperación, visualización, análisis y exportación de los datos, así como la ágil conexión (interoperabilidad) con otros repositorios o nodos de mayor rango, preferentemente europeos.
+## ¿Otro buscador más?
 
-Hay tres principios que han tenido especial peso en su concepción:
+REDMIC no es otro rastreador más que busca datos recorriendo múltiples webs o IDE, sino que, en contraste, almacena los datos aportados para que luego puedan ser consultados o analizados. Esta estrategia implica un mayor esfuerzo al añadir datos, pero por contra, simplifica la explotación de los mismos. Añadir un dato es una acción que se efectúa una sola vez, pero permite que ese dato sea aprovechado múltiples veces en diferentes estudios o análisis. De esta forma se maximiza la reutilización de los datos.
 
-* Sin datos no se va a ninguna parte, y con datos malos se llega al sitio equivocado. El control de calidad y el rigor en la gestión de datos son cuestiones fundamentales.
-* Obtener datos del mar es caro y laborioso. Se trata de obtener el dato una vez y potenciar su uso al máximo y todas las veces que haga falta.
-* Los datos obtenidos con fondos públicos deben ser accesibles a todos los potenciales usuarios.
+## ¿No estaba la centralización pasada de moda?
 
-REDMIC es un sistema de información geográfica en cierto modo peculiar, pues se organiza como repositorio común de datos en función del tipo de dato y no en función de aplicaciones concretas con fines específicos (pesquerías, navegación, gestión costera, etc.), como es habitual en el diseño de la mayoría de los GIS. Podría entenderse como un híbrido entre una base de datos científica y un GIS. La idea básica es almacenar de forma integrada cualquier tipo de dato marino (oceánico + costero) que tenga un referente geográfico, maximizando así su explotación, pero respetando siempre el dato original y las circunstancias en que se generó. Obtener el dato una vez y usarlo muchas, pero en vez de hacerlo a través de la interoperabilidad entre varias bases de datos, que es el enfoque tradicional, REDMIC apuesta por la generatividad que surge de un modelo integrado.
-
-La estrategia adoptada en REDMIC consiste en vincular los datos siempre a la actividad que los genera, con toda la información asociada (metadatos), evitando la redundancia de información, que se estructura:secuencia de:
-
-
-TODO Añadir gráfico **quién, dónde, cuándo, qué** y **cómo**
-
-Al estar todos los datos vinculados por el factor geográfico y recogidos en un mismo repositorio, la facilidad para correlacionar unos con otros es óptima y justifica el esfuerzo inicial de integrarlos.
-
-## Tipos de datos
-
-* Datos directos. Datos obtenidos desde una medición in situ.
-    * Tiempo real. Los datos son transmitidos desde el dispositivo a REDMIC.
-    * Diferidos. Los datos son almacenados en el dispositivo y luego se vuelcan a REDMIC.
-* Datos indirectos. Los datos son obtenidos de muestras.
-* Datos derivados. Datos elaborados a partir de otros.
-
-
-## Fuentes
-* **Geológico - geomorfológicos.** Datos referentes a la naturaleza física de los fondos, como el tipo de lecho marino, mineralogía o granulometría. Se incluyen también levantamientos batimétricos, perfiles estratigráficos y los registros de la actividad sísmica.
-* **Hidrológico - climatológicos.** Todo lo relacionado con el clima marítimo y la dinámica de las aguas (mareas, corrientes, oleaje, tasas de sedimentación, etc.).
-* **Físico-químicos.** Parámetros descriptivos de las condiciones físicas (temperatura, ph, salinidad, etc.) y químicas (nutrientes, oxígeno disuelto, etc.) del agua o los sedimentos.
-* **Biológicos.** Todo el complejo universo de datos relacionados con los seres vivos marinos (inventarios de biodiversidad, avistamientos, marcado de animales, producción planctónica, análisis microbiológicos, mareas rojas, clasificación de hábitat, etc.).
-* **Elementos antrópicos.** Todo tipo de datos abstractos (p.ej. demarcaciones jurisdiccionales, áreas protegidas, zonas de pesca) y reales (infraestructuras emplazadas en el mar, basuras, vertidos, etc.) cuyo origen es la actividad humana. Este grupo incluye también el tráfico marítimo.
-* **Aprovechamientos.** Datos que refieren al aprovechamiento o explotación de recursos marinos por parte del hombre, independiente de su naturaleza. Incluye los geológicos (arenas, etc.), energéticos (mareas, hidrocarburos, etc.) y biológicos (pesca, marisqueo, maricultura, etc.).
-* **Especiales.** Datos singulares de diversa índole no asignables a ninguna de las categorías anteriores, aunque puedan estar relacionados con los elementos que contienen. Por ejemplo, las imágenes de satélite o de vídeo, los registros sonoros, los variados resultados de los modelos (mapa de vientos, corrientes, etc.), o el estado de las baterías de un sensor automático.
-
+Nuestra estrategia para el análisis de datos recomienda tenerlos un sitio común, con datos homogeneizados para generar mejores informes y de manera más ágil, pudiendo incluso descubrir relaciones entre variables que, de otro modo, serían difíciles de descubrir. En ocasiones tenemos una idea preconcebida sobre qué fenómenos actúan sobre la realidad que se estudia, pero el precio de descartar influencias insospechadas de nuevas variables puede ser muy alto. Por eso, solo con la integración de los datos, es posible tener en cuenta todas las variables que entran en juego en un sistema, maximizando así el potencial de explotación del dato, pero respetando siempre el dato original y las circunstancias en las que se generó, o sea, sus metadatos. 
 
