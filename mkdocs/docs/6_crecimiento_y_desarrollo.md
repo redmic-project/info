@@ -1,5 +1,5 @@
 # Crecimiento y desarrollo
-![esquemadesarrollo](no_encuentro_esta_imagen)
+![esquema_desarrollo](images/sprint.jpg){: .center}
 
 REDMIC hace suyo el enfoque de desarrollo ágil, consistente en la entrega de forma iterativa e incremental de nuevas funcionalidades. Este concepto permite aumentar el valor gradualmente, en base a nuevas funcionalidades que se van descubriendo e implementando a medida que las necesidades aparecen.
 
