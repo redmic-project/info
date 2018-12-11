@@ -1,8 +1,7 @@
 site_name: 'REDMIC'
 site_description: 'Repositorio de Datos Marinos Integrados'
 site_author: 'OAG'
-url: "https://docs.redmic.es"
-
+url: 'https://docs.redmic.es'
 
 theme:
   name: 'material'
@@ -15,6 +14,7 @@ theme:
     code: 'Roboto Mono'
   language: 'es'
   logo: 'images/logo.svg'
+  favicon: 'images/favicon.ico'
   palette:
     primary: 'redmic'
 
