@@ -28,7 +28,7 @@ Open Science representa un nuevo enfoque para el proceso científico, basado en 
 
 La publicación de datos recabados y producidos en el curso de investigaciones científicas, para que puedan ser reutilizados, es un pilar básico de REDMIC.
 
-### Open Science
+### Citizen Science
 
 Citizen Science engloba el trabajo científico realizado por miembros del público en general, a menudo en colaboración con o bajo la dirección de científicos profesionales e instituciones científicas.
 
